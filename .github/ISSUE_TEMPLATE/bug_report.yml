@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a problem with content, data, tooling, or the site
+labels: [bug]
+title: "[bug] <short description>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please provide clear steps and affected language(s).
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      description: What area is affected?
+      placeholder: content | linguistics profile | tools | build | site
+  - type: input
+    id: languages
+    attributes:
+      label: Language(s)
+      description: ISO code(s) and names
+      placeholder: es (Spanish), zh-Hans (Simplified Chinese)
+  - type: input
+    id: level_unit
+    attributes:
+      label: Level / Unit
+      placeholder: A1 / Unit 03
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1) Go to ... 2) Open ... 3) See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / screenshots
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      placeholder: Logs, links, references, sources
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: I can work on a fix
+          required: false
