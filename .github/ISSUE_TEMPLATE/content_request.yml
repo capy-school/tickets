@@ -1,0 +1,50 @@
+name: Content request
+description: Request new lessons, exercises, or improvements
+labels: [enhancement, content]
+title: "[content] <language> <level> <unit>: <short description>"
+body:
+  - type: input
+    id: languages
+    attributes:
+      label: Language(s)
+      placeholder: fr (French)
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      placeholder: A0 | A1 | A2 | B1 | B2
+    validations:
+      required: true
+  - type: input
+    id: unit
+    attributes:
+      label: Unit (if applicable)
+      placeholder: Unit 04
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: What content is needed and why?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      placeholder: Outline lesson objectives, vocab themes, grammar targets, assessment ideas
+  - type: textarea
+    id: references
+    attributes:
+      label: References / sources
+      placeholder: Frequency lists, corpora, textbooks, grammar references
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked the roadmap and existing content
+          required: true
+        - label: I can contribute this content
+          required: false

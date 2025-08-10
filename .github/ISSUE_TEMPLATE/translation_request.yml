@@ -1,0 +1,38 @@
+name: Translation request
+description: Request translation/localization of existing content
+labels: [translation]
+title: "[translation] <from> → <to>: <short description>"
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source language
+      placeholder: en (English)
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target language
+      placeholder: zh-Hans (Simplified Chinese)
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: Unit 02, dialogues + vocab
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for translators
+      placeholder: Terminology, style preferences, register, IPA conventions
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I verified the source content exists
+          required: true
+        - label: I can review the translation
+          required: false
