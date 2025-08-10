@@ -1,4 +1,4 @@
-# Multilingual Linguistics Learning (45 Languages)
+# Multilingual Linguistics Learning
 
 A comprehensive, linguistics-focused learning hub covering 45 languages. This project emphasizes phonetics, morphology, syntax, semantics, pragmatics, orthography, and sociolinguistics—paired with practical learner materials (vocabulary decks, graded readers, dialogues, exercises, and assessments).
 
